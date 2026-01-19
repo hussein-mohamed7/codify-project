@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codify</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -10,9 +11,7 @@
     <main class="app">
       <header>
         <h1>&lt;/&gt; Codify</h1>
-        <p class="subtitle">
-          Convert code between programming languages with AI assistance
-        </p>
+        <p class="subtitle">Convert code between programming languages with AI assistance</p>
       </header>
 
       <section class="card">
@@ -22,9 +21,7 @@
 
         <div class="drop-code">Drop code file here</div>
 
-        <textarea
-          placeholder="// Write code here or drag & drop a file"
-        ></textarea>
+        <textarea placeholder="// Write code here or drag & drop a file"></textarea>
 
         <div class="drop-hint">⬆ Drag & drop a code file here</div>
 
@@ -37,7 +34,7 @@
         <div class="languages">
           <div class="select-group">
             <label>From Language</label>
-            <select id="fromLang">
+            <select>
               <option>JavaScript</option>
               <option>Python</option>
               <option>C++</option>
@@ -48,7 +45,7 @@
 
           <div class="select-group">
             <label>To Language</label>
-               <select id="toLang">
+            <select>
               <option>JavaScript</option>
               <option>Python</option>
               <option>C++</option>
@@ -60,7 +57,7 @@
 
         <div class="actions">
           <button class="convert-btn">Convert Code</button>
-         <button class="reset-btn">Reset</button>
+          <button class="reset-btn">Reset</button>
         </div>
 
         <div class="status ready">
@@ -71,7 +68,5 @@
 
       <footer class="Copyright">AI Code Converter © 2026</footer>
     </main>
-
-    <script src="script.js"></script>
   </body>
 </html>
