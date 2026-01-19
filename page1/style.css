@@ -9,8 +9,10 @@ body {
 }
 
 .app {
-  width: 900px;
-  margin: auto auto;
+  max-width: 900px;
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -243,4 +245,51 @@ hr {
   background: #1e293b;
   border-left-color: #3b82f6;
   color: #dbeafe;
+}
+
+@media (max-width: 900px) {
+  .languages {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  textarea {
+    height: 160px;
+  }
+
+  .drop-code {
+    font-size: 15px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .upload-btn,
+  .convert-btn,
+  .reset-btn {
+    width: 100%;
+  }
+
+  .status {
+    font-size: 13px;
+  }
+  .drop-hint {
+    display: none;
+  }
 }
