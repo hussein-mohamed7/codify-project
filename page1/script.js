@@ -58,7 +58,11 @@ function setStatusReady(text = "Ready to convert code") {
   statusDiv.textContent = text;
   statusDiv.className = "status ready";
 }
-
+textarea.addEventListener("input", () => {
+  if (textarea.value.trim() === "") {
+    resetBtn();
+  }
+});
 function setStatusLoading() {
   statusDiv.textContent = "Converting...";
   statusDiv.className = "status loading";
